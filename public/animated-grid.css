@@ -5,7 +5,9 @@
   display: grid;
   gap: 1rem;
 
-  /* Explicit grid */
+  /* Explicit grid, 
+  you manually define the columns and rows by giving names to the different areas in the grid.
+  The cntre names are emoji's */
   grid-template-areas:
     'a  b  c  d'
     'l  🌟 🌟 e'
@@ -34,7 +36,7 @@
 .card {
   background-color: rgb(36, 243, 147);
   animation: cardEntrance 700ms ease-out;
-  animation-fill-mode: backwards;
+  animation-fill-mode: backwards;    /* sets first keyframe value to invisible  */
 }
 
 .card:nth-child(1) {
